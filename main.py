@@ -52,10 +52,6 @@ def sbis_parsing(file):
             else:
                 result['Без ИНН'].append(tmp)
     return result
-    #
-    # with open('sbis_result.txt', 'w', encoding='utf-8') as file_sbis:
-    #     for k, v in sorted(result.items()):
-    #         print(k, '-', v, file=file_sbis)
 
 
 def parsing_1c(file):
@@ -79,9 +75,6 @@ def parsing_1c(file):
             result[inn].append(tmp)
 
     return result
-    # with open('1C_result.txt', 'w', encoding='utf-8') as file_1c:
-    #     for k, v in result.items():
-    #         print(k, '-', v, file=file_1c)
 
 
 def get_sbis_data(sbis_dict):
